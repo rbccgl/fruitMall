@@ -1,0 +1,52 @@
+body {
+    margin-top: 50px;
+}
+
+.navbar-brand img {
+    max-height: 36px;
+    margin-top: -7px;
+}
+
+.navbar_about:hover {
+    text-decoration: none;
+}
+
+h3 {
+    padding: 10px 15px;
+    padding-bottom: 0;
+    display: inline-block;
+    color: green;
+    padding-right: 30px;
+    margin-bottom: 0;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.classification ul {
+    padding-bottom: 15px;
+}
+
+.classification li {
+    padding: 0;
+}
+
+.fresh_veg img {
+    width: 220px;
+    height: 220px;
+}
+
+.middle_image {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.sell_well {
+    margin-bottom: 25px;
+}
+
+.new_goods {
+    margin-top: 25px;
+}

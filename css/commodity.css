@@ -1,0 +1,205 @@
+/* 商品展示部分开始 */
+
+.magnifying {
+    padding-bottom: 50px;
+    margin-top: 30px;
+}
+
+.magnifying>div:nth-child(1) {
+    text-align: center;
+}
+
+.magnifying>div:nth-child(1)>img {
+    width: 400px;
+    margin-top: 50px;
+    margin-left: 10%;
+}
+
+.referral {
+    padding-left: 6%;
+}
+
+.referral h3 {
+    margin-top: 40px;
+}
+
+.referral p:first-of-type {
+    color: green;
+}
+
+.referral p:first-of-type+p {
+    margin-top: 20px;
+}
+
+.referral p:first-of-type+p>span {
+    padding-left: 30px;
+    color: red;
+    font-size: 30px;
+}
+
+.commentCount {
+    margin: 25px 0;
+}
+
+.commentCount span:nth-child(1) {
+    margin-right: 50px;
+}
+
+.buyCount {
+    margin: 50px 0;
+}
+
+.buyCount input {
+    width: 100px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.buyCount span {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.buyCount span:nth-child(1) {
+    border-right: 1px solid white;
+}
+
+.buyCount span:nth-last-child(1) {
+    border-left: 1px solid white;
+}
+
+.bought button {
+    width: 120px;
+    text-align: center;
+}
+
+.bought button:nth-child(1) {
+    margin-right: 50px;
+}
+
+.referral>div:nth-last-child(1) {
+    margin-top: 50px;
+    padding-left: 18px;
+}
+
+.referral>div:nth-last-child(1) span {
+    display: inline-block;
+    width: 100px;
+}
+
+.referral>div:nth-last-child(1) span:nth-child(2) {
+    margin-left: 70px;
+}
+
+.referral>div:nth-last-child(1) img {
+    width: 18px;
+}
+
+@media screen and (max-width: 1200px) and (min-width:992px) {
+    .magnifying>div:nth-child(1)>img {
+        margin-top: 30%;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width:768px) {
+    .magnifying>div:nth-child(1)>img {
+        margin-top: 60%;
+    }
+    .magnifying>div:nth-last-child(1) span:nth-child(2) {
+        margin-left: 55px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width:626px) {
+    .magnifying>div:nth-child(1)>img {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 625px) and (min-width:500px) {
+    .referral h3 {
+        font-size: 18px;
+    }
+    .referral p:first-of-type {
+        font-size: 12px;
+    }
+    .bought button {
+        width: 100px;
+    }
+    .referral>div:nth-last-child(1) span:nth-child(2) {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .referral {
+        width: 350px;
+        margin-left: 40px;
+        padding: 0;
+    }
+    .referral h3 {
+        font-size: 20px;
+    }
+    .referral p:first-of-type {
+        display: none;
+    }
+    .referral p:first-of-type+p>span {
+        padding-left: 30px;
+        font-size: 25px;
+    }
+    .bought button {
+        width: 100px;
+    }
+    .referral>div:nth-last-child(1) span:nth-child(2) {
+        margin-left: 50px;
+    }
+}
+
+
+/* 商品展示部分结束 */
+
+
+/* 商品详情部分开始 */
+
+.trademark {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.trademark span {
+    color: green;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .setLeft {
+        text-indent: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .presentation {
+        padding-left: 20%;
+    }
+    .tab-content {
+        padding-left: 30%;
+    }
+}
+
+@media screen and (max-width: 500px) {}
+
+
+/* 商品详情部分结束 */
+
+.evaluate .media-left img {
+    width: 40px;
+    height: 40px;
+}
+
+.evaluate .media-heading img {
+    width: 35px;
+    height: 35px;
+}

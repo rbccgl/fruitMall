@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品详情</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/commodity.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/commodity.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/page.css">
+
+</head>
+
+<body>
+    <!-- 导航条部分开始 -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand hidden-sm navbar-link skill" href="#"><img src="images/logo.png" alt=""></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="hidden-sm"><a href="index.html">首页</a></li>
+                    <li><a href="#">全部产品</a></li>
+                    <li><a href="#">最新资讯</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">购物车</a></li>
+                    <li><a href="login.html">登录</a></li>
+                    <li><a href="reg.html">注册</a></li>
+                </ul>
+                <a class="navbar-right navbar-text hidden-sm navbar-link " href="#">关于</a>
+            </div>
+        </div>
+    </nav>
+    <!-- 导航条部分结束 -->
+
+
+    <!-- 商品展示部分开始 -->
+    <header class="container ">
+        <div class="row magnifying">
+            <div class="col-sm-4 hidden-xs">
+                <img src="images/t2.jpg" class="img-responsive" alt="">
+            </div>
+            <div class="col-sm-8  col-xs-8 col-xs-offset-2 col-sm-offset-0 referral ">
+                <h3>陕西眉县 徐香猕猴桃 15个礼盒装</h3>
+                <p>个大香甜,产地现摘，新鲜保证，坏果包赔</p>
+                <p>价格<span>&yen;24.70</span></p>
+                <hr>
+                <p class="commentCount">
+                    <span>收藏:1024</span>
+                    <span>评论：666条</span>
+                </p>
+                <hr>
+                <div class="buyCount">
+                    购买数量：<span>-</span><input type="text" value="1"><span>+</span>
+                </div>
+                <div class="row bought">
+                    <div class="col-md-12">
+                        <button class="btn btn-md btn-danger"><span class=""></span>加入购物车</button>
+                        <button class="btn btn-md btn-success">立即购买</button>
+                    </div>
+                </div>
+                <div class="row col-sm-8">
+                    <span>收藏店铺<img src="images/heart.png" alt=""></span>
+                    <span>收藏商品<img src="images/heart.png" alt=""></span>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+    <!-- 商品展示部分结束 -->
+
+    <!-- 介绍内容 -->
+    <div class="container ">
+        <div class="row">
+            <div class="col-xs-10 detail">
+                <ul class="nav nav-pills nav-justified presentation" role="tablist">
+                    <li role="presentation" class="active  ">
+                        <a href="#home" data-toggle="tab">商品详情</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#settings" data-toggle="tab">评价</a>
+                    </li>
+
+                </ul>
+
+                <div class="tab-content ">
+                    <!-- 商品详情 -->
+                    <div role="tabpanel" class="tab-pane active" id="home">
+                        <div class="trademark">品牌：<span>徐香</span></div>
+                        <div class="briefWord row">
+                            <p class="col-lg-3  col-sm-4 col-xs-12">名称：陕西眉县徐香猕猴桃</p>
+                            <p class="col-lg-3  setLeft col-sm-4 col-xs-12">商品编号：28132723637</p>
+                            <p class="col-lg-3  setLeft col-sm-4 col-xs-12">店铺：徐香猕猴桃旗舰店</p>
+                            <p class="col-lg-3  col-sm-4 col-xs-12">商品数量：15个</p>
+                            <p class="col-lg-3  setLeft col-sm-4 col-xs-12">商品产地：中国大陆</p>
+                            <p class="col-lg-3  setLeft col-sm-4 hidden-xs">类别：精品</p>
+                            <p class="col-lg-3  col-sm-4 col-xs-12 hidden-xs">包装：礼盒装</p>
+                            <p class="col-lg-3  setLeft col-sm-4 col-xs-12 hidden-xs">原产地：陕西</p>
+                            <p class="col-lg-3  setLeft col-sm-4 col-xs-12 hidden-xs">等级：精品</p>
+                            <p class="col-lg-3  col-sm-4 col-xs-12">热卖时间：8月，9月，10月</p>
+                            <p class="col-lg-3  setLeft col-sm-4 col-xs-12">适用人群：各年龄段</p>
+                            <p class="col-lg-3  setLeft col-sm-4 col-xs-12">单果重量：70-79g</p>
+                            <img src="images/spjs.jpg" class="col-xs-12" alt="">
+                            <img src="images/spxq1.jpg " class="col-xs-12" alt="">
+                            <img src="images/spxq2.jpg" class="col-xs-12" alt="">
+                            <img src="images/spxq3.jpg" class="col-xs-12" alt="">
+
+
+                        </div>
+                    </div>
+
+
+
+                    <!-- 用户评价 -->
+                    <div role="tabpanel" class="tab-pane evaluate" id="settings">
+                        <!-- 第一个评价 -->
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <a href="#">
+                                    <img class="media-object" src="images/pjyh.jpg" alt="...">
+                                </a>
+                                <p>天**仙</p>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">
+                                    <img src="images/pjxl.jpeg" alt="">
+                                    <img src="images/pjxl.jpeg" alt="">
+                                    <img src="images/pjxl.jpeg" alt="">
+                                    <img src="images/pjxl.jpeg" alt="">
+                                    <img src="images/pjxl.jpeg" alt="">
+                                </h4>
+                                <p>
+                                    收到速度很快，包装完好?，很细致，没有坏的和烂的，?果子个头均匀，有些硬，放两天就好了?，非常香甜可口，营养丰富，口感香甜，?还可以做果汁，和广告说的一样?，希望大家和我一样喜欢，支持果农?
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <!-- 第二个评价 -->
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <a href="#">
+                                    <img class="media-object" src="images/pjyh.jpg" alt="...">
+                                </a>
+                                <p>天**姥</p>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">
+                                    <img src="images/pjxl.jpeg" alt="">
+                                    <img src="images/pjxl.jpeg" alt="">
+                                    <img src="images/pjxl.jpeg" alt="">
+                                    <img src="images/pjxl.jpeg" alt="">
+                                    <img src="images/pjxl.jpeg" alt="">
+                                </h4>
+                                <p>
+                                    包装完好，也没有坏果，收到放两三天就能吃，分量足 个头很均匀。红心猕猴桃超好吃，很甜水分也很足，家里人都喜欢吃，好吃的停不下来，两天就吃完了，孩子每天都在问猕猴桃买了吗，又下单了几箱，买少了根本接不上。期待美味的到来
+                                </p>
+                                <div class="media">
+                                    <div class="media-left media-middle">
+                                        <a href="#">
+                                            <img class="media-object" src="images/pjyh.jpg" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">3天后追加评价</h4>
+                                        <p>确实是十分好吃，以后一定多光顾</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <a href="#">
+                                    <img class="media-object" src="images/pjyh.jpg" alt="...">
+                                </a>
+                                <p>天**仙</p>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">
+                                    <img src="images/pjxl.jpeg" alt="">
+                                    <img src="images/pjxl.jpeg" alt="">
+                                    <img src="images/pjxl.jpeg" alt="">
+                                    <img src="images/pjxl.jpeg" alt="">
+                                    <img src="images/pjxl.jpeg" alt="">
+                                </h4>
+                                <p>
+                                    收到速度很快，包装完好?，很细致，没有坏的和烂的，?果子个头均匀，有些硬，放两天就好了?，非常香甜可口，营养丰富，口感香甜，?还可以做果汁，和广告说的一样?，希望大家和我一样喜欢，支持果农?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <a href="#">
+                                    <img class="media-object" src="images/pjyh.jpg" alt="...">
+                                </a>
+                                <p>繁**锦</p>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">
+                                    <img src="images/pjxl.jpeg" alt="">
+                                    <img src="images/pjxl.jpeg" alt="">
+                                    <img src="images/pjxl.jpeg" alt="">
+                                    <img src="images/pjxl.jpeg" alt="">
+                                    <img src="images/pjxl.jpeg" alt="">
+                                </h4>
+                                <p>
+                                    收到速度很快，包装完好?，很细致，没有坏的和烂的，?果子个头均匀，有些硬，放两天就好了?，非常香甜可口，营养丰富，口感香甜，?还可以做果汁，和广告说的一样?，希望大家和我一样喜欢，支持果农?
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div style="text-align: center;margin:250px auto;">
+                        <div id="pager" class="pager clearfix">
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- 底部部分开始 -->
+    <footer>
+        <div class="container">
+            <div class="row character">
+                <div class="media col-md-3 col-xs-6">
+                    <div class="media-left">
+                        <img class="media-object" src="images/ABUIABAEGAAgp8ruwQUowJfNpwQwQzhD.png" alt="...">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">食品安全</h4>
+                        <p>精选产品 严格质保</p>
+                    </div>
+                </div>
+                <div class="media col-md-3 col-xs-6">
+                    <div class="media-left">
+                        <img class="media-object" src="images/ABUIABAEGAAgp8ruwQUowJfNpwQwQzhD.png" alt="...">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">全城冷链</h4>
+                        <p>可靠物流 安全可控</p>
+                    </div>
+                </div>
+                <div class="media  col-md-3 col-xs-6">
+                    <div class="media-left">
+                        <img class="media-object" src="images/ABUIABAEGAAgp8ruwQUowJfNpwQwQzhD.png" alt="...">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">绿色天然</h4>
+                        <p>绿色生态 蔬果精选</p>
+                    </div>
+                </div>
+                <div class="media col-md-3 col-xs-6">
+                    <div class="media-left">
+                        <img class="media-object" src="images/ABUIABAEGAAgp8ruwQUowJfNpwQwQzhD.png" alt="...">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">产地直采</h4>
+                        <p>限定采源 质量保证</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-hr">
+        </div>
+
+        <div class="container">
+            <div class="row service-pay text-center">
+                <div>
+                    <p>服务保障</p><br>
+                    <p>正品保证</p>
+                    <p>七天无理由退货</p>
+                    <p>退货返运费</p>
+                    <p>7&times;15小时客户服务</p>
+
+                </div>
+                <div>
+                    <p>支付方式</p><br>
+                    <p>公司转账</p>
+                    <p>货到付款</p>
+                    <p>在线支付</p>
+                    <p>分期付款</p>
+
+                </div>
+                <div>
+                    <p>商家服务</p><br>
+                    <p>商家入驻</p>
+                    <p>培训中心</p>
+                    <p>广告服务</p>
+                    <p>服务广场</p>
+
+                </div>
+                <div>
+                    <p>服务保障</p><br>
+                    <p>免运费</p>
+                    <p>海外配送</p>
+                    <p>EMS</p>
+                    <p>211限时达</p>
+
+                </div>
+
+            </div>
+
+            <p class="copy">&copy;2016 果然新鲜 版权所有</p>
+            <p class="skill">手机版|本站使用Bootstrap技术搭建|管理登录</p>
+        </div>
+    </footer>
+
+</body>
+<script type="text/javascript">
+    $("#pager").zPager({
+        totalData: 50,
+        htmlBox: $('#wraper'),
+        btnShow: true,
+        ajaxSetData: false
+    });
+
+    function currentPage(currentPage) {
+        /*
+            触发页码数位置： Page/js/jquery.z-pager.js 64行
+        */
+        console.log("当前页码数：" + currentPage);
+    }
+</script>
+
+</body>
+
+</html>

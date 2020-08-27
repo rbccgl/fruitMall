@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>购物车</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/carts.css">
+    <script src="js/carts.js"></script>
+
+</head>
+
+<body>
+    <!-- 导航条部分开始 -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand hidden-sm navbar-link skill" href="#"><img src="images/logo.png" alt=""></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="hidden-sm"><a href="#">首页</a></li>
+                    <li><a href="#">全部产品</a></li>
+                    <li><a href="#">最新资讯</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="carts.html">购物车</a></li>
+                    <li><a href="login.html">登录</a></li>
+                    <li><a href="reg.html">注册</a></li>
+                </ul>
+                <a class="navbar-right navbar-text hidden-sm navbar-link " href="#">关于</a>
+            </div>
+        </div>
+    </nav>
+    <!-- 导航条部分结束 -->
+    <header class="container">
+        <div class="row headline">
+            <div class="input-group col-md-4 pull-right">
+                <span class="input-group-addon">宝贝</span>
+                <input type="text" class="form-control">
+                <span class="input-group-addon">搜索</span>
+            </div>
+        </div>
+    </header>
+    <div class="container ">
+        <div class="row detail">
+            <div class="col-sm-5">
+                <ul class="nav nav-pills nav-justified" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#home" data-toggle="tab">全部商品</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#profile" data-toggle="tab">降价商品</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#messages" data-toggle="tab">库存紧张</a>
+                    </li>
+
+                </ul>
+                <div class="tab-content ">
+
+                    <!-- 全部商品 -->
+                    <div role="tabpanel" class="tab-pane active" id="home">
+                        <section class="cartMain">
+                            <div class="cartMain_hd">
+                                <ul class="order_lists cartTop">
+                                    <li class="list_chk">
+                                        <!--所有商品全选-->
+                                        <input type="checkbox" id="all" class="whole_check">
+                                        <label for="all"></label> 全选
+                                    </li>
+                                    <li class="list_con">商品信息</li>
+                                    <li class="list_info">商品参数</li>
+                                    <li class="list_price">单价</li>
+                                    <li class="list_amount">数量</li>
+                                    <li class="list_sum">金额</li>
+                                    <li class="list_op">操作</li>
+                                </ul>
+                            </div>
+
+                            <div class="cartBox">
+
+                                <div class="order_content">
+                                    <ul class="order_lists">
+                                        <li class="list_chk">
+                                            <input type="checkbox" id="checkbox_2" class="son_check">
+                                            <label for="checkbox_2"></label>
+                                        </li>
+                                        <li class="list_con">
+                                            <div class="list_img">
+                                                <a href="javascript:;"><img src="images/gc1.jpg" alt=""></a>
+                                            </div>
+                                            <div class="list_text"><a href="javascript:;">陕西眉县 徐香猕猴桃 15个礼盒装</a></div>
+                                        </li>
+                                        <li class="list_info">
+                                            <p>规格：默认</p>
+                                            <p>数量：15（个）</p>
+                                        </li>
+                                        <li class="list_price">
+                                            <p class="price">￥24.7</p>
+                                        </li>
+                                        <li class="list_amount">
+                                            <div class="amount_box">
+                                                <a href="javascript:;" class="reduce reSty">-</a>
+                                                <input type="text" value="1" class="sum">
+                                                <a href="javascript:;" class="plus">+</a>
+                                            </div>
+                                        </li>
+                                        <li class="list_sum">
+                                            <p class="sum_price">￥24.7</p>
+                                        </li>
+                                        <li class="list_op">
+                                            <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                                        </li>
+                                    </ul>
+                                    <ul class="order_lists">
+                                        <li class="list_chk">
+                                            <input type="checkbox" id="checkbox_3" class="son_check">
+                                            <label for="checkbox_3"></label>
+                                        </li>
+                                        <li class="list_con">
+                                            <div class="list_img">
+                                                <a href="javascript:;"><img src="images/gc4.jpg" alt=""></a>
+                                            </div>
+                                            <div class="list_text"><a href="javascript:;">云南石榴 6粒装 单果约重230kg</a></div>
+                                        </li>
+                                        <li class="list_info">
+                                            <p>规格：默认</p>
+                                            <p>数量：6（粒）</p>
+                                        </li>
+                                        <li class="list_price">
+                                            <p class="price">￥29</p>
+                                        </li>
+                                        <li class="list_amount">
+                                            <div class="amount_box">
+                                                <a href="javascript:;" class="reduce reSty">-</a>
+                                                <input type="text" value="1" class="sum">
+                                                <a href="javascript:;" class="plus">+</a>
+                                            </div>
+                                        </li>
+                                        <li class="list_sum">
+                                            <p class="sum_price">￥29</p>
+                                        </li>
+                                        <li class="list_op">
+                                            <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                                        </li>
+                                    </ul>
+                                    <ul class="order_lists">
+                                        <li class="list_chk">
+                                            <input type="checkbox" id="checkbox_6" class="son_check">
+                                            <label for="checkbox_6"></label>
+                                        </li>
+                                        <li class="list_con">
+                                            <div class="list_img">
+                                                <a href="javascript:;"><img src="./images/3.png" alt=""></a>
+                                            </div>
+                                            <div class="list_text"><a href="javascript:;">高原红富士苹果 6个装 1.2kg</a></div>
+                                        </li>
+                                        <li class="list_info">
+                                            <p>规格：默认</p>
+                                            <p>数量：6（个）</p>
+                                        </li>
+                                        <li class="list_price">
+                                            <p class="price">￥24.9</p>
+                                        </li>
+                                        <li class="list_amount">
+                                            <div class="amount_box">
+                                                <a href="javascript:;" class="reduce reSty">-</a>
+                                                <input type="text" value="1" class="sum">
+                                                <a href="javascript:;" class="plus">+</a>
+                                            </div>
+                                        </li>
+                                        <li class="list_sum">
+                                            <p class="sum_price">￥24.9</p>
+                                        </li>
+                                        <li class="list_op">
+                                            <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                            <!--底部-->
+                            <div class="bar-wrapper">
+                                <div class="bar-right">
+                                    <div class="piece">已选商品<strong class="piece_num">0</strong>件</div>
+                                    <div class="totalMoney">共计: <strong class="total_text">0.00</strong></div>
+                                    <div class="calBtn"><a href="javascript:;">结算</a></div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="model_bg"></section>
+                        <section class="my_model">
+                            <p class="title">删除宝贝<span class="closeModel">X</span></p>
+                            <p>您确认要删除该宝贝吗？</p>
+                            <div class="opBtn"><a href="javascript:;" class="dialog-sure">确定</a><a href="javascript:;" class="dialog-close">关闭</a></div>
+                        </section>
+                    </div>
+
+
+                    <!-- 降价商品 -->
+                    <div role="tabpanel" class="tab-pane" id="profile">
+                        <section class="cartMain">
+                            <div class="cartMain_hd">
+                                <ul class="order_lists cartTop">
+                                    <li class="list_chk">
+                                        <!--所有商品全选-->
+                                        <input type="checkbox" id="all" class="whole_check">
+                                        <label for="all"></label> 全选
+                                    </li>
+                                    <li class="list_con">商品信息</li>
+                                    <li class="list_info">商品参数</li>
+                                    <li class="list_price">单价</li>
+                                    <li class="list_amount">数量</li>
+                                    <li class="list_sum">金额</li>
+                                    <li class="list_op">操作</li>
+                                </ul>
+                            </div>
+
+                            <div class="cartBox">
+                                <div class="order_content">
+                                    <ul class="order_lists">
+                                        <li class="list_chk">
+                                            <input type="checkbox" id="checkbox_2" class="son_check">
+                                            <label for="checkbox_2"></label>
+                                        </li>
+                                        <li class="list_con">
+                                            <div class="list_img">
+                                                <a href="javascript:;"><img src="images/jk1.jpg" alt=""></a>
+                                            </div>
+                                            <div class="list_text"><a href="javascript:;">越南进口红心火龙果 5斤</a></div>
+                                        </li>
+                                        <li class="list_info">
+                                            <p>规格：默认</p>
+                                            <p>重量：5（斤）</p>
+                                        </li>
+                                        <li class="list_price">
+                                            <p class="price">￥38</p>
+                                        </li>
+                                        <li class="list_amount">
+                                            <div class="amount_box">
+                                                <a href="javascript:;" class="reduce reSty">-</a>
+                                                <input type="text" value="1" class="sum">
+                                                <a href="javascript:;" class="plus">+</a>
+                                            </div>
+                                        </li>
+                                        <li class="list_sum">
+                                            <p class="sum_price">￥38</p>
+                                        </li>
+                                        <li class="list_op">
+                                            <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                                        </li>
+                                    </ul>
+                                    <ul class="order_lists">
+                                        <li class="list_chk">
+                                            <input type="checkbox" id="checkbox_3" class="son_check">
+                                            <label for="checkbox_3"></label>
+                                        </li>
+                                        <li class="list_con">
+                                            <div class="list_img">
+                                                <a href="javascript:;"><img src="images/jk3.jpg" alt=""></a>
+                                            </div>
+                                            <div class="list_text"><a href="javascript:;">泰国金枕头榴莲 一个装</a></div>
+                                        </li>
+                                        <li class="list_info">
+                                            <p>规格：默认</p>
+                                            <p>尺寸：16*16*3(cm)</p>
+                                        </li>
+                                        <li class="list_price">
+                                            <p class="price">￥179</p>
+                                        </li>
+                                        <li class="list_amount">
+                                            <div class="amount_box">
+                                                <a href="javascript:;" class="reduce reSty">-</a>
+                                                <input type="text" value="1" class="sum">
+                                                <a href="javascript:;" class="plus">+</a>
+                                            </div>
+                                        </li>
+                                        <li class="list_sum">
+                                            <p class="sum_price">￥179</p>
+                                        </li>
+                                        <li class="list_op">
+                                            <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                                        </li>
+                                    </ul>
+                                    <ul class="order_lists">
+                                        <li class="list_chk">
+                                            <input type="checkbox" id="checkbox_6" class="son_check">
+                                            <label for="checkbox_6"></label>
+                                        </li>
+                                        <li class="list_con">
+                                            <div class="list_img">
+                                                <a href="javascript:;"><img src="images/jk4.jpg" alt=""></a>
+                                            </div>
+                                            <div class="list_text"><a href="javascript:;">南非进口黄柠檬 6个装</a></div>
+                                        </li>
+                                        <li class="list_info">
+                                            <p>规格：默认</p>
+                                            <p>数量（6）</p>
+                                        </li>
+                                        <li class="list_price">
+                                            <p class="price">￥19</p>
+                                        </li>
+                                        <li class="list_amount">
+                                            <div class="amount_box">
+                                                <a href="javascript:;" class="reduce reSty">-</a>
+                                                <input type="text" value="1" class="sum">
+                                                <a href="javascript:;" class="plus">+</a>
+                                            </div>
+                                        </li>
+                                        <li class="list_sum">
+                                            <p class="sum_price">￥19</p>
+                                        </li>
+                                        <li class="list_op">
+                                            <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                            <!--底部-->
+                            <div class="bar-wrapper">
+                                <div class="bar-right">
+                                    <div class="piece">已选商品<strong class="piece_num">0</strong>件</div>
+                                    <div class="totalMoney">共计: <strong class="total_text">0.00</strong></div>
+                                    <div class="calBtn"><a href="javascript:;">结算</a></div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="model_bg"></section>
+                        <section class="my_model">
+                            <p class="title">删除宝贝<span class="closeModel">X</span></p>
+                            <p>您确认要删除该宝贝吗？</p>
+                            <div class="opBtn"><a href="javascript:;" class="dialog-sure">确定</a><a href="javascript:;" class="dialog-close">关闭</a></div>
+                        </section>
+                    </div>
+
+
+                    <!-- 库存紧张 -->
+                    <div role="tabpanel" class="tab-pane" id="messages">
+                        <section class="cartMain">
+                            <div class="cartMain_hd">
+                                <ul class="order_lists cartTop">
+                                    <li class="list_chk">
+                                        <!--所有商品全选-->
+                                        <input type="checkbox" id="all" class="whole_check">
+                                        <label for="all"></label> 全选
+                                    </li>
+                                    <li class="list_con">商品信息</li>
+                                    <li class="list_info">商品参数</li>
+                                    <li class="list_price">单价</li>
+                                    <li class="list_amount">数量</li>
+                                    <li class="list_sum">金额</li>
+                                    <li class="list_op">操作</li>
+                                </ul>
+                            </div>
+
+                            <div class="cartBox">
+                                <div class="order_content">
+                                    <ul class="order_lists">
+                                        <li class="list_chk">
+                                            <input type="checkbox" id="checkbox_2" class="son_check">
+                                            <label for="checkbox_2"></label>
+                                        </li>
+                                        <li class="list_con">
+                                            <div class="list_img">
+                                                <a href="javascript:;"><img src="images/ht-10.jpg" alt=""></a>
+                                            </div>
+                                            <div class="list_text"><a href="javascript:;">莲藕500g</a></div>
+                                        </li>
+                                        <li class="list_info">
+                                            <p>规格：默认</p>
+                                            <p>重量：500（g）</p>
+                                        </li>
+                                        <li class="list_price">
+                                            <p class="price">￥10</p>
+                                        </li>
+                                        <li class="list_amount">
+                                            <div class="amount_box">
+                                                <a href="javascript:;" class="reduce reSty">-</a>
+                                                <input type="text" value="1" class="sum">
+                                                <a href="javascript:;" class="plus">+</a>
+                                            </div>
+                                        </li>
+                                        <li class="list_sum">
+                                            <p class="sum_price">￥10</p>
+                                        </li>
+                                        <li class="list_op">
+                                            <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                                        </li>
+                                    </ul>
+                                    <ul class="order_lists">
+                                        <li class="list_chk">
+                                            <input type="checkbox" id="checkbox_3" class="son_check">
+                                            <label for="checkbox_3"></label>
+                                        </li>
+                                        <li class="list_con">
+                                            <div class="list_img">
+                                                <a href="javascript:;"><img src="images/ht-11.jpg" alt=""></a>
+                                            </div>
+                                            <div class="list_text"><a href="javascript:;">绿芦笋200g</a></div>
+                                        </li>
+                                        <li class="list_info">
+                                            <p>规格：默认</p>
+                                            <p>重量：200（g）</p>
+                                        </li>
+                                        <li class="list_price">
+                                            <p class="price">￥10</p>
+                                        </li>
+                                        <li class="list_amount">
+                                            <div class="amount_box">
+                                                <a href="javascript:;" class="reduce reSty">-</a>
+                                                <input type="text" value="1" class="sum">
+                                                <a href="javascript:;" class="plus">+</a>
+                                            </div>
+                                        </li>
+                                        <li class="list_sum">
+                                            <p class="sum_price">￥10</p>
+                                        </li>
+                                        <li class="list_op">
+                                            <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                                        </li>
+                                    </ul>
+                                    <ul class="order_lists">
+                                        <li class="list_chk">
+                                            <input type="checkbox" id="checkbox_6" class="son_check">
+                                            <label for="checkbox_6"></label>
+                                        </li>
+                                        <li class="list_con">
+                                            <div class="list_img">
+                                                <a href="javascript:;"><img src="images/ht-23.jpg" alt=""></a>
+                                            </div>
+                                            <div class="list_text"><a href="javascript:;">西蓝花500g</a></div>
+                                        </li>
+                                        <li class="list_info">
+                                            <p>规格：默认</p>
+                                            <p>重量：500（g）</p>
+                                        </li>
+                                        <li class="list_price">
+                                            <p class="price">￥12</p>
+                                        </li>
+                                        <li class="list_amount">
+                                            <div class="amount_box">
+                                                <a href="javascript:;" class="reduce reSty">-</a>
+                                                <input type="text" value="1" class="sum">
+                                                <a href="javascript:;" class="plus">+</a>
+                                            </div>
+                                        </li>
+                                        <li class="list_sum">
+                                            <p class="sum_price">￥12</p>
+                                        </li>
+                                        <li class="list_op">
+                                            <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+
+                            <!--底部-->
+                            <div class="bar-wrapper">
+                                <div class="bar-right">
+                                    <div class="piece">已选商品<strong class="piece_num">0</strong>件</div>
+                                    <div class="totalMoney">共计: <strong class="total_text">0.00</strong></div>
+                                    <div class="calBtn"><a href="javascript:;">结算</a></div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="model_bg"></section>
+                        <section class="my_model">
+                            <p class="title">删除宝贝<span class="closeModel">X</span></p>
+                            <p>您确认要删除该宝贝吗？</p>
+                            <div class="opBtn"><a href="javascript:;" class="dialog-sure">确定</a><a href="javascript:;" class="dialog-close">关闭</a></div>
+                        </section>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </div>
+</body>
+
+</html>

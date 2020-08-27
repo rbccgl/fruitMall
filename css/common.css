@@ -1,0 +1,135 @@
+/* body {
+    margin-top: 8%;
+} */
+
+.navbar-brand img {
+    max-height: 36px;
+    margin-top: -7px;
+}
+
+.navbar_about:hover {
+    text-decoration: none;
+}
+
+
+/* 底部样式开始 */
+
+footer {
+    background-image: url("../images/footer.jpg");
+    background-size: 100% 100%;
+}
+
+.character {
+    padding-top: 50px;
+    color: #EEEEEE;
+}
+
+.character .media:nth-child(1) {
+    margin-top: 15px;
+}
+
+.character .media-body {
+    padding-top: 18px;
+}
+
+@media screen and (min-width: 1200px) {
+    .character .media:nth-child(1) {
+        padding-left: 6%;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+    .character .media:nth-child(1) {
+        padding-left: 2%;
+    }
+    .copy {
+        margin-left: 43%;
+        color: red;
+    }
+    .skill {
+        margin-left: 35%;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .character {
+        padding-left: 9%;
+    }
+    .character .media:nth-child(2) {
+        padding-left: 8%;
+    }
+    .character .media:nth-child(4) {
+        padding-left: 8%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .character {
+        padding-left: 7%;
+    }
+    .character .media:nth-child(2) {
+        padding-left: 9%;
+    }
+    .character .media:nth-child(4) {
+        padding-left: 9%;
+    }
+}
+
+.footer-hr {
+    margin-top: 80px;
+}
+
+.service-pay div {
+    width: 20%;
+    border-bottom: 2px solid #EEEEEE;
+    color: #EEEEEE;
+    font-weight: bold;
+    margin-right: 5%;
+    margin-top: 15px;
+    float: left;
+    padding-bottom: 15px;
+}
+
+.service-pay div:nth-child(1) {
+    margin-left: 3%;
+}
+
+.service-pay div:nth-child(4) {
+    margin-right: 2%;
+}
+
+@media screen and (max-width: 768px) {
+    .service-pay div {
+        width: 40%;
+        border-bottom: 2px solid #EEEEEE;
+        color: #EEEEEE;
+        font-weight: bold;
+        float: left;
+    }
+    .service-pay div:nth-child(1) {
+        margin-left: 8%;
+    }
+    .service-pay div:nth-child(3) {
+        margin-left: 8%;
+    }
+}
+
+.copy {
+    color: #EEEEEE;
+    margin-left: 43%;
+    margin-top: 30PX;
+}
+
+.skill {
+    margin-left: 37.5%;
+    color: #EEEEEE;
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .copy {
+        margin-left: 40%;
+    }
+    .skill {
+        margin-left: 32%;
+    }
+}
